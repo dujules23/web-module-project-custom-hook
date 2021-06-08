@@ -12,8 +12,9 @@ import "./styles.scss";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  //imported useDarkMode hook, with a boolean
-  const [darkMode, setDarkMode] = useDarkMode(false);
+
+  
+  const [darkMode, setDarkMode] = useDarkMode();
 
   useEffect(() => {
     axios
